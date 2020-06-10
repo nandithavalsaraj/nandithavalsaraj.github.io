@@ -1,4 +1,4 @@
-/*MAke padding and border included within element size*/
+/*Make padding and border included within element size*/
 * {
   	box-sizing: border-box;
 }
@@ -72,11 +72,20 @@ a{
 }
 
 .nav-item-bar{
-	height: 50%;
-	width: 80%;
-	display:flex;
-	position: relative;
-	justify-content: flex-end;
+	height: 80%;
+	width: 100%;
+	background-color: #68e2fc;
+}
+
+.nav-item-bar a {
+  float: right;
+  display: block;
+  color: #33292b;
+  text-align: center;
+  text-decoration: none;
+  margin: 2%;
+  font-size: 100%;
+  background-color: #68e2fc;
 }
 
 .nav-item{
@@ -87,9 +96,50 @@ a{
 	text-align: center;
 }
 
-.nav-item:hover{
-	color: #d2873b;
+.nav-item{
 }
+.nav-item:hover{
+  	color: #d2873b;
+}
+
+
+.nav-item-bar .icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-item-bar .nav-item{display: none;}
+  .nav-item-bar a.icon {
+    float: right;
+    display: block;
+    font-size: 35px;
+    margin-top:0px;
+    margin-right: 5px;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item-bar.responsive {position: relative;}
+  .nav-item-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-item-bar.responsive .nav-item {
+    float: right;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+  }
+  .cat{
+  position: relative;
+  height: 60px;
+  width: 70px;
+  top:40%;
+}
+
+  }
 
 .content{
 	margin:0% 10%;
@@ -97,7 +147,8 @@ a{
 
 }
 .content-header{
-
+  	display: table-cell;
+    vertical-align: middle;
 }
 
 .footer{
@@ -137,30 +188,27 @@ a{
 .sidebar-fixed{
 
 }
-
-
+section{
+	display: table;
+	height: 100vh; 
+}
 #intro{
-	height: 600px;
 	width: 100%;
 	padding: 20% 0%;
 }
 #aboutme{
-	height: 600px;
 	width: 100%;
 	padding: 10% 0%;
 }
 #experience{
-	height: 600px;
-	width: 100%;
+    width: 100%;
 	padding: 10% 0%;
 }
 #projects{
-	height: 600px;
-	width: 100%;
+    width: 100%;
 	padding: 10% 0%;
 }
 #contact{
-	height: 500px;
 	width: 100%;
 	padding: 20% 0%;
 }
