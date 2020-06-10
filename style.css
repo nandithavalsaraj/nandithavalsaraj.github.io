@@ -1,0 +1,286 @@
+/*MAke padding and border included within element size*/
+* {
+  	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+	display: box;
+	margin: 0%;
+	padding: 0%;
+	scroll-behavior: smooth;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	box-sizing: inherit;
+	overflow: scroll;
+	background-image: linear-gradient(#b1e8f2 0%, #b1e8f2 10%,#b1e8f2 60%, #9ae7f5 90%);
+	font-family: 'Aclonica';
+    font-size: 22px;
+}
+
+li{
+	opacity: 70%; 
+	font-size: 20px;"
+}
+
+a{
+	text-decoration:none;
+}
+
+.header{
+	width: 100%;
+	height: 50px;
+	margin: 0%;
+	padding: 0;
+	background-color: #68e2fc;
+	position: fixed;
+	transition: top 0.3s;
+	display: block;
+	position: fixed;
+	top:0;
+	z-index: 1;
+
+}
+.navbar{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.navbar-left{
+	height: 100%;
+	width: 10%;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+
+}
+
+.navbar-right{
+	height: 100%;
+	width: 90%;
+	color: white;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.nav-item-bar{
+	height: 50%;
+	width: 80%;
+	display:flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav-item{
+	height: 70%;
+	width: 15%;
+	color: #33292b;
+	position: relative;
+	text-align: center;
+}
+
+.nav-item:hover{
+	color: #d2873b;
+}
+
+.content{
+	margin:0% 10%;
+	z-index: -1;
+
+}
+.content-header{
+
+}
+
+.footer{
+	height: 10%;
+	width: 100%;
+	background-color: #68e2fc;
+	bottom: 0px;
+	margin: 0%;
+	padding: 0%;
+}
+
+.footer-data{
+	height: 30%;
+	width: 100%;
+	font-size: 50%;
+	opacity: 60%;
+	text-align: center;
+}
+
+.footer-icon{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.button {
+	width: 15%;
+	padding: 1%;
+	border: 3px solid white;
+    text-align: center;
+    color: black;
+    opacity: 80%;
+    display: inline-block;
+    cursor: pointer;
+ }
+
+.sidebar-fixed{
+
+}
+
+#intro{
+	height: 600px;
+	width: 100%;
+	padding: 20% 0%;
+}
+#aboutme{
+	height: 600px;
+	width: 100%;
+	padding: 10% 0%;
+}
+#experience{
+	height: 600px;
+	width: 100%;
+	padding: 10% 0%;
+}
+#projects{
+	height: 600px;
+	width: 100%;
+	padding: 10% 0%;
+}
+#contact{
+	height: 500px;
+	width: 100%;
+	padding: 20% 0%;
+}
+
+#resume{
+	height: 0px;
+	width: 100%;
+}
+
+.cat{
+  position: relative;
+  height: 60px;
+  width: 70px;
+  top:25%;
+}
+
+.face{
+  position: absolute;	
+  height: 100%;
+  width: 100%;
+}
+.face-base{
+  position: absolute;
+  background-color: #33292b;
+  height: 100%;
+  width: 100%;
+  border-radius: 45%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.ear-left, .ear-right{
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  border-bottom: 1em solid #33292b;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  top: -20%;
+}
+
+.ear-left{
+  position: absolute;
+  transform: rotate(-30deg);
+}
+
+.ear-right{
+  position: absolute;
+  left: 67%;
+  transform: rotate(30deg);
+}
+
+.inner-left-ear{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border-left: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+  right: 5%;
+}
+
+.inner-right-ear{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border-right: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+}
+
+.eye-left, .eye-right{
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #d2873b;
+
+}
+
+.eye-left{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+.eye-right{
+  position: absolute;
+  top: 20%;
+  left: 54%;
+}
+
+.eyeball{
+   position: absolute;
+   width: 80%;
+   height: 80%;
+   border-radius: 50%;
+   background-color: #262626;
+   top: 5%;
+   left: 8%;
+   -webkit-transform-origin: 50%;
+   -webkit-animation: blink 2s infinite;
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+.nose{
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  border-top: 0.4em solid #d36149;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  top: 54%;
+  left: 42%;
+}
+
