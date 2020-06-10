@@ -1,4 +1,4 @@
-/*MAke padding and border included within element size*/
+/*Make padding and border included within element size*/
 * {
   	box-sizing: border-box;
 }
@@ -22,6 +22,14 @@ body{
 	background-image: linear-gradient(#b1e8f2 0%, #b1e8f2 10%,#b1e8f2 60%, #9ae7f5 90%);
 	font-family: 'Aclonica';
     font-size: 22px;
+}
+
+@media only screen and (min-width: 768px){
+	.header{
+		width: 100%;
+		height: 40px;
+		display: block;
+	}
 }
 
 li{
