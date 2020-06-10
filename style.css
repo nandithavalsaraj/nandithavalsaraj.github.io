@@ -84,8 +84,7 @@ a{
 	width: 80%;
 	display:flex;
 	position: relative;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-end;
 }
 
 .nav-item{
@@ -146,6 +145,7 @@ a{
 .sidebar-fixed{
 
 }
+
 
 #intro{
 	height: 600px;
