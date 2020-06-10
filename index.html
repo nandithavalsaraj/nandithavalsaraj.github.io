@@ -6,6 +6,7 @@
 	<title>Nanditha Valsaraj</title>
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -32,12 +33,15 @@
 			</a>
 		</div>
 		<div class="navbar-right">
-			<div class="nav-item-bar">
-				<a href="#aboutme" class="nav-item">about_me( )</a>
-				<a href="#experience" class="nav-item">experience()</a>
-				<a href="#projects" class="nav-item">projects()</a>
-				<a href="resume.pdf" target="_blank" class="nav-item">resume()</a>
-				<a href="#contact" class="nav-item">contact_me()</a>
+			<div class="nav-item-bar" id="my-nav-item-bar">
+				<a href="#aboutme" onclick="myselectFunction()" class="nav-item">about_me( )</a>
+				<a href="#experience" onclick="myselectFunction()" class="nav-item">experience()</a>
+				<a href="#projects"  onclick="myselectFunction()" class="nav-item">projects()</a>
+				<a href="#contact"  onclick="myselectFunction()" class="nav-item">contact_me()</a>
+				<a href="resume.pdf" target="_blank" onclick="myselectFunction()"class="nav-item">resume()</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   			</div>
 		</div>
 	</div>
@@ -137,7 +141,27 @@
 		<h3 >Designed by Nanditha Valsaraj</h3>
 	</div>
 </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("my-nav-item-bar");
+  if (x.className === "nav-item-bar") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-item-bar";
+  }
+}
+function myselectFunction() {
+  var x = document.getElementById("my-nav-item-bar");
+  if (x.className === "nav-item-bar responsive") {
+     x.className = "nav-item-bar";
+     console.log("werrewr");
+  } 
+  else{
+  	console.log("wer");
+  }
+}
 
+</script>
 
 <!--
 
