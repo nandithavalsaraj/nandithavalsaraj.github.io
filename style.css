@@ -75,8 +75,8 @@ a{
 	width: 90%;
 	color: white;
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item-bar{
@@ -91,7 +91,6 @@ a{
   color: #33292b;
   text-align: center;
   text-decoration: none;
-  margin: 2%;
   font-size: 100%;
   background-color: #68e2fc;
 }
@@ -102,6 +101,7 @@ a{
 	color: #33292b;
 	position: relative;
 	text-align: center;
+  top:30%;
 }
 
 .nav-item{
@@ -151,6 +151,7 @@ a{
   	display: table-cell;
     vertical-align: middle;
 }
+
 
 .footer{
 	height: 5%;
@@ -218,6 +219,17 @@ section{
 	height: 0px;
 	width: 100%;
 }
+
+
+#weatherApp{
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 .cat{
   position: absolute;
@@ -333,4 +345,6 @@ section{
   top: 54%;
   left: 42%;
 }
+
+
 
