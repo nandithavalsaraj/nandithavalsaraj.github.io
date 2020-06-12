@@ -139,3 +139,7 @@ window.onload = function(){
 	var cityID = config.MY_CITY || 4350049;
 	getWeather(cityID);
 }
+
+
+
+
